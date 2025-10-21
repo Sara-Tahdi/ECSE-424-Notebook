@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECSE 424 - Low-Fidelity Prototype</title>
+    <style>
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 60px;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .back-link {
+        color: #0000EE;
+        text-decoration: none;
+        margin-bottom: 20px;
+        display: inline-block;
+        }
+
+        .back-link:hover {
+        text-decoration: underline;
+        }
+
+
+        h1 {
+            text-decoration: underline;
+            font-size: 16pt;
+            font-weight: bold;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+
+        h2 {
+            font-weight: bold;
+            font-size: 12pt;
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin: 12px 0;
+            text-align: justify;
+        }
+
+        blockquote {
+            margin: 12px 0 12px 40px;
+            font-style: italic;
+        }
+
+        ul {
+            margin: 12px 0;
+            padding-left: 40px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #000000;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+
+        .checkbox {
+            margin: 4px 0;
+        }
+
+        .underline-input {
+            display: inline-block;
+            min-width: 200px;
+            border-bottom: 1px solid #000000;
+        }
+
+        ol {
+            margin: 12px 0;
+            padding-left: 40px;
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        a {
+            color: #0000EE;
+            text-decoration: underline;
+        }
+        .prototype-img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        display: block;
+        border: 1px solid #ccc;
+        padding: 4px;
+        background-color: #f9f9f9;
+        }
+        .images {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<a href="index.html" class="back-link">← Back to Home</a>
+
+<div class="section">
+    <h1>1. Design concepts</h1>
+    <div class="images">
+        <figure>
+            <img src="Prototype 1.jpg" alt="Design Sketch 1" class="prototype-img">
+            <figcaption>Sketch 1</figcaption>
+        </figure>
+        <figure>
+            <img src="Prototype 2.jpg" alt="Design Sketch 2" class="prototype-img">
+            <figcaption>Sketch 2</figcaption>
+        </figure>
+        <figure>
+            <img src="Prototype 3.jpg" alt="Design Sketch 3" class="prototype-img">
+            <figcaption>Sketch 3</figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="section">
+    <h1>2. Prototypes:</h1>
+    <div class="images">
+        <figure>
+            <img src="Sleeve.jpg" alt="Prototype 1" class="prototype-img">
+            <figcaption>Prototype 1 – Smart sleeve</figcaption>
+        </figure>
+        <figure>
+            <img src="coaster.jpg" alt="Prototype 2" class="prototype-img">
+            <figcaption>Prototype 2 – Smart coaster</figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="section">
+    <h1>3. Usability goals</h1>
+    <p>In this section, we will establish a set of usability goals against which our prototype will be evaluated during user testing. These goals are intended to ensure that the hydration reminder sleeve offers the best experience for users who wish for a focused work or study. Every usability goal is meant to guide our product to be an ideal calm technology.</p>
+
+    <h2>A. Ease of Use:</h2>
+    <p>users should be able to understand how the hydration sleeve works and specifically how the color change indicates the user needs to hydrate, within the initial interaction with the device and without the need for instructions.</p>
+    <blockquote>
+        <strong>Rationale:</strong> The smart sleeve is meant to be subtle and ambient, not something users need to learn. This means that the color change should be understood by users enough to communicate that a red colouring means enough time has passed without hydration. If users don't understand what the color means on the first use, the system loses its effectiveness.
+    </blockquote>
+
+    <h2>B. Visibility in Peripheral Awareness:</h2>
+    <p>users should be able to notice the color change in their peripheral vision, out of the corner of their eye while they're in a focused work or study session, without having to shift attention away from their task.</p>
+    <blockquote>
+        <strong>Rationale:</strong> Since the goal of our smart sleeve is to remind users to stay hydrated during their focused work without interrupting them, the light change should be visible enough to catch the attention of the user passively. The light change should also remain calm and be subtle enough not to break the focus of the user. This allows our product to remain a calm technology that doesn't overwhelm a user with information, but makes it available when the user needs it.
+    </blockquote>
+
+    <h2>C. Effectiveness:</h2>
+    <p>the sensors of the smart sleeve should be able to correctly detect when a user drinks and stops drinking, in order to reset the timer controlling the color change.</p>
+    <blockquote>
+        <strong>Rationale:</strong> our smart sleeve should allow users to get accurate information in order to be trustworthy, and thus of use to our users. To do so, the smart sleeve has to behave consistently and according to the expected behavior. If it doesn't recognize when a user drinks and stops or falsely detects a user drinking or resets the timer incorrectly, users will quickly lose confidence in our product and just stop using it.
+    </blockquote>
+
+    <h2>D. User Satisfaction:</h2>
+    <p>users should find satisfaction with our smart sleeve and feel like it is a helpful hydration tool, that it is generally easy to understand, and that it fits naturally into their focused work or study sessions. They shouldn't feel like the bottle distracts, overwhelms, frustrates, or confuses them.</p>
+    <blockquote>
+        <strong>Rationale:</strong> our smart sleeve will only work and be efficient if users want to keep using it during their focused session. Their feelings about our product and their general satisfaction of it is core to the success of the product. Our product's effectiveness also rests on its reputation, because if users are satisfied with our product, they are more likely to encourage others to use it. This will benefit our product in the long-term because more people using our product makes the design more familiar and intuitive.
+    </blockquote>
+</div>
+
+<div class="section">
+    <h1>4. Benchmark tasks</h1>
+    <p>In this section, we will explore the tasks that will help us test whether our smart sleeve is calmly and effectively reminding users to drink water during their focused study session.</p>
+
+    <h2>Task 1: Do users understand what the color change means?</h2>
+    <p><strong>Description:</strong></p>
+    <p>The user will be given the smart sleeve that they will fit to their bottle after which they must work as they normally would for 45 minutes focused study or work session. At the end, we'll ask them what they thought the color change was about.</p>
+    <p><strong>Success Metric:</strong></p>
+    <p>The task is successful if the user notices the color change of the sleeve, and if they correctly guess it's a hydration reminder verbally or through taking a sip of their water without being told to.</p>
+    <p><strong>Usability Goals:</strong> Ease of use, Effectiveness, Peripheral Awareness</p>
+
+    <h2>Task 2: Can users stay hydrated during focused work without being interrupted?</h2>
+    <p><strong>Description:</strong></p>
+    <p>The user will complete a 45 minute focused task like writing or coding or studying, with the bottle and smart sleeve placed just outside their direct line of sight. The smart sleeve will be active and will gradually change color throughout the session. We will observe whether the user responds to the color change without distraction, to see if the smart sleeve fits naturally into their workflow.</p>
+    <p><strong>Success Metric:</strong></p>
+    <p>The task is successful if the user notices the color change and drinks within 5 minutes of the sleeve turning red, without expressing that it disrupted their focus.</p>
+    <p><strong>Usability Goals:</strong> Ease of use, Effectiveness, Visibility in Peripheral Awareness</p>
+
+    <h2>Task 3: Is the sleeve still visible in bright lighting conditions?</h2>
+    <p><strong>Description:</strong></p>
+    <p>The user will work during a 10 minute work or study session with the bottle placed in its usual location, but with strong overhead lighting added nearby. The session will be observed to note if lighting affects the user's ability to notice the changes with the sleeve.</p>
+    <p><strong>Success Metric:</strong></p>
+    <p>The task is successful if the user reports being able to see the color change clearly despite the bright lighting.</p>
+    <p><strong>Usability Goals:</strong> Visibility in Peripheral Awareness, Effectiveness</p>
+
+    <h2>Task 4: Does the sleeve integrate naturally into the user's workspace?</h2>
+    <p><strong>Description:</strong></p>
+    <p>The user will place the sleeve on their bottle and position it as they normally would in their workspace. The session will be observed to track if the sleeve integrates naturally into the user's workspace or if it is a distraction.</p>
+    <p><strong>Success Metric:</strong></p>
+    <p>The task is successful if the user reports that the sleeve fits naturally into their environment and doesn't feel it to be intrusive or distracting.</p>
+    <p><strong>Usability Goals:</strong> Effectiveness, User Satisfaction</p>
+
+    <h2>Task 5: Is the sleeve compatible with different bottle types?</h2>
+    <p><strong>Description:</strong></p>
+    <p>The user will be provided with different types of bottles, like a metal bottle, a plastic bottle, a bottle with a straw and a mug shaped bottle. The user will then be asked to fit the sleeve onto each one of the bottles, then drink from the bottle with the sleeve. We will look for comfort, fit, and proper detection of drinking.</p>
+    <p><strong>Success Metric:</strong></p>
+    <p>The task is successful if the sleeve fits securely on all bottle types and the drink detection and color reset function correctly for each use.</p>
+    <p><strong>Usability Goals:</strong> Effectiveness, Ease of Use</p>
+
+    <h2>Task 6: Do users find the sleeve helpful and easy to use overall?</h2>
+    <p><strong>Description:</strong></p>
+    <p>After completing all our tasks, the user will be asked to give verbal or written feedback about their experience with the hydration sleeve. Our questions will explore ease of use, design appeal, whether they found it helpful, and whether they would use it in their daily life.</p>
+    <p><strong>Success Metric:</strong></p>
+    <p>The task is successful if the user rates their experience positively, meaning more than 80% satisfaction, and indicate they would consider using the product again.</p>
+    <p><strong>Usability Goals:</strong> User Satisfaction, Effectiveness, Ease of Use</p>
+</div>
+
+<div class="section">
+    <h1>5. Observer Briefing</h1>
+    <p><strong>Project Name:</strong> Hydration Reminder Sleeve</p>
+    <p><strong>Date:</strong></p>
+    <p><strong>Observer's Name:</strong></p>
+    <p>Hello,</p>
+    <p>Thank you for being an observer for this project. As an observer, your role is to note down the user's interactions with the hydration reminder device prototype. A data collection sheet is provided for you to fill out. In addition, please observe how the user interacts with the prototype, the ease at which they perform the tasks, and any feedback they may provide. Note down these observations along with the quantitative data (numbers) necessary. Please try to remain silent and unobtrusive, your goal is simply to observe how the user interacts and not to guide them!</p>
+</div>
+
+<div class="section">
+    <h1>6. User Introduction</h1>
+    <p>Hello and welcome,</p>
+    <p>Thank you for participating in our usability testing session. The reason for this meeting is to gain insight into your usage of our hydration reminder device. I, &lt;name of facilitator&gt;, will be guiding you through this session. &lt;Name of observer&gt; will be taking notes during the session. This session will be recorded for future data analysis purposes. If you haven't filled out the consent form already, please fill it out now before we proceed! If you haven't filled out the pre-test questionnaire yet, please fill it out now. Today you will be asked to perform a list of tasks. The goal of this exercise is to test our system, not to test you. Note that there is no right or wrong answer. Are you ready? Let's get started!</p>
+</div>
+
+<div class="section">
+    <h1>7. Pre-Test Questionnaire</h1>
+    <ol>
+        <li>What is your age?</li>
+        <li>What is your gender?</li>
+        <li>What is your occupation or field of study?</li>
+        <li>On a typical work/study day, how many hours do you spend focused on a single task (e.g., coding, writing, data analysis)?</li>
+        <li>How often do you drink water during focused work/study sessions?</li>
+        <li>What type of container do you usually use for water? (e.g., bottle, mug, cup, brand/type if known)</li>
+        <li>Where do you typically place your water container while working?</li>
+        <li>Do you rely on reminders (e.g., phone apps, timers, alarms) to stay hydrated?</li>
+        <li>If yes, how effective do you find those reminders?</li>
+        <li>How often do you ignore or miss these digital reminders during deep work?</li>
+        <li>How distracting do you find digital notifications during work/study?</li>
+        <li>Are you familiar with ambient or peripheral feedback systems (e.g., devices that signal without sound or direct interaction)?</li>
+        <li>Have you ever used a smart hydration product (e.g., HidrateSpark bottle)?</li>
+        <li>If yes, what did you like or dislike about it?</li>
+        <li>How likely are you to respond to a subtle color change on your water container as a hydration reminder?</li>
+        <li>What would make you more likely to drink water during your work/study sessions?</li>
+        <li>Do you find that your hydration habits change based on how focused or distracted you are?</li>
+        <li>How important is it to you that a hydration reminder is non-disruptive and visually calm?</li>
+        <li>How aesthetically important is the look of your hydration accessories (e.g., mug, sleeve)?</li>
+        <li>What would you expect this hydration reminder system to help you with?</li>
+    </ol>
+</div>
+
+<div class="section">
+    <h1>8. User Training Documentation</h1>
+    <p>In this exercise, you'll be testing a new bottle sleeve prototype during some typical work or study time. You'll wear this sleeve on your water bottle and place the bottle like you normally would during your work or study session, and we'll ask you to complete a few simple tasks. We'll guide you if you want to clarify terminology and if you want to confirm that you understand the task. You're not expected to know anything about what the sleeve does. Just do your best to interact with it however it feels right in the moment. Presented below are a list of tasks.</p>
+    <p>*Note that it is imperative that you read and complete the tasks in order, one after another, and that you do not skip ahead to read upcoming tasks.</p>
+
+    <h2>Task 1</h2>
+    <p>For this first task, we will ask you to do a regular 10 minutes work or study session with the sleeve on your bottle. Afterward, will ask you to answer the following questions:</p>
+    <p>Did you notice anything about the sleeve?</p>
+    <p>Did you do anything in response to that?</p>
+    <p>Do you have ideas as to what the purpose of the sleeve is?</p>
+
+    <h2>Task 2</h2>
+    <p>For this second task, we will ask you to do another 10 minutes of work or study session with the sleeve on your bottle. This time, we will ask you to keep the bottle just outside your direct line of sight, like off to the side of your laptop. Afterward, will ask you to answer the following questions:</p>
+    <p>Did anything about the sleeve catch your attention?</p>
+    <p>Did you interact with your bottle naturally?</p>
+    <p>Did anything feel distracting?</p>
+
+    <h2>Task 3</h2>
+    <p>For this third task, we will ask you to do another 10-minute work or study session with the sleeve on your bottle, and the bottle where you would normally put it when working. This time, we will add a strong overhead lighting near the bottle. Afterward, we will ask you to answer the following questions:</p>
+    <p>Did you notice the sleeve at any point during the session?</p>
+    <p>Was the color visible or easy to distinguish in the bright lighting?</p>
+    <p>Did the lighting affect your ability to notice any changes with the sleeve?</p>
+
+    <h2>Task 4</h2>
+    <p>During this fourth task, we will ask you to place the sleeve on your bottle, and then place the bottle with the sleeve wherever you'd normally keep it. Afterward, will ask you to answer the following questions:</p>
+    <p>Did the sleeve blend in with your workspace, or did it feel out of place?</p>
+    <p>Did you ever feel like the sleeve got in the way?</p>
+    <p>Was it something you could easily forget about while working?</p>
+
+    <h2>Task 5</h2>
+    <p>For this fifth task, we will ask you to try putting the sleeve on a few different types of bottles and take a sip from each one. Afterward, will ask you to answer the following questions:</p>
+    <p>Was it easy to fit?</p>
+    <p>Did it feel secure?</p>
+    <p>Did it react the same way for each bottle?</p>
+
+    <h2>Task 6</h2>
+    <p>For this sixth and final task, we will ask for some feedback. In your opinion, answer the following questions:</p>
+    <p>Was anything confusing?</p>
+    <p>Would you use something like this in real life?</p>
+    <p>Are there any features you wish it had?</p>
+
+    <p><a href="https://drive.google.com/file/d/12OvcZ6IVhltJbZ5yBb6WP6TsoOK9AUWD/view?usp=sharing" target="_blank"><strong>Test script</strong></a></p>
+</div>
+
+<div class="section">
+    <h1>9. Data Collection Sheet</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Task ID</th>
+                <th>Success Rate</th>
+                <th>Errors/Confusion</th>
+                <th>Observer Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Task 1: Do users understand what the color change means?</strong></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Task 2: Can users stay hydrated during focused work without being interrupted?</strong></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Task 3: Is the sleeve still visible in bright lighting conditions?</strong></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Task 4: Does the sleeve integrate naturally into the user's workspace?</strong></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Task 5: Is the sleeve compatible with different bottle types?</strong></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Task 6: Do users find the sleeve helpful and easy to use overall?</strong></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="section">
+    <h1>10. Post-Test Questionnaire</h1>
+    
+    <p><strong>1. Without prior explanation, how clear was the purpose of the coaster's color change?</strong></p>
+    <div class="checkbox">☐ Very Unclear</div>
+    <div class="checkbox">☐ Unclear</div>
+    <div class="checkbox">☐ Neutral</div>
+    <div class="checkbox">☐ Clear</div>
+    <div class="checkbox">☐ Very Clear</div>
+
+    <p><strong>2. What did you think the changing colors meant? Describe.</strong></p>
+
+    <p><strong>3. Rate the difficulty as to how hard it was to use this system</strong></p>
+    <div class="checkbox">☐ Very Hard</div>
+    <div class="checkbox">☐ Hard</div>
+    <div class="checkbox">☐ Neutral</div>
+    <div class="checkbox">☐ Easy</div>
+    <div class="checkbox">☐ Very Easy</div>
+
+    <p><strong>4. During the test, how many time do you recall taking notice of the light?</strong></p>
+    <p><span class="underline-input"></span></p>
+
+    <p><strong>5. Did any of these instance distract you from your work or pulled you out of your focus state? If so, how many?</strong></p>
+    <p><span class="underline-input"></span></p>
+
+    <p><strong>6. Did you find the ambient color change (Check all)</strong></p>
+    <div class="checkbox">☐ Too subtle</div>
+    <div class="checkbox">☐ Annoying</div>
+    <div class="checkbox">☐ Gentle and appropriate</div>
+    <div class="checkbox">☐ Noticeable but not disruptive</div>
+    <div class="checkbox">☐ Other: <span class="underline-input"></span></div>
+
+    <p><strong>7. How likely would you be to use this tool regularly during your work or study sessions?</strong></p>
+    <div class="checkbox">☐ Very Unlikely</div>
+    <div class="checkbox">☐ Unlikely</div>
+    <div class="checkbox">☐ Neutral</div>
+    <div class="checkbox">☐ Likely</div>
+    <div class="checkbox">☐ Very Likely</div>
+
+    <p><strong>8. If there was a aspect you could change about the product what would it be?</strong></p>
+    <p><span class="underline-input"></span></p>
+
+    <p><strong>9. What did you like the most about it?</strong></p>
+    <p><span class="underline-input"></span></p>
+
+    <p><strong>10. How satisfied are you with the overall concept of the item?</strong></p>
+    <div class="checkbox">☐ Very Unsatisfied</div>
+    <div class="checkbox">☐ Unsatisfied</div>
+    <div class="checkbox">☐ Neutral</div>
+    <div class="checkbox">☐ Satisfied</div>
+    <div class="checkbox">☐ Very Satisfied</div>
+
+    <p><strong>11. Other comments?</strong></p>
+    <p><span class="underline-input"></span></p>
+</div>
+
+<div class="section">
+    <h1>10.5 Test Video</h1>
+    <div style="text-align: center; margin: 20px 0;">
+        <iframe width="640" height="480" 
+                src="hhttps://youtu.be/rCbpkISUR1k" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+<div class="section">
+    <h1>11. Summary of Test Results</h1>
+
+    <h2>Test Procedure</h2>
+    <p>To evaluate our prototypes against the established usability goals, we conducted a formative user study with 2 participants (aged 15-55) recruited from university libraries. The testing session was designed to simulate a typical focused work period while assessing the benchmark tasks.</p>
+
+    <h2>Procedure</h2>
+    <ol>
+        <li><strong>Introduction and Consent:</strong> Participants were greeted and given the User Introduction script. They had to provide fill out the consent form and complete the pre-test questionnaire.</li>
+        <li><strong>Observer Briefing:</strong> briefed separately to ensure unbiased data collection using the Data Collection Sheet</li>
+        <li><strong>Task Execution:</strong> As per our User Training Documentation, participant were given no explanation about how the sleeves functioned. They were asked to perform their own work for 45 minutes with the sleeve on their bottle. The Benchmark Tasks were assessed primarily through observation during this period.</li>
+        <li><strong>Post-Test Interview:</strong> We conducted the final task, task 6, by asking participant the structured feedback questions to gauge overall satisfaction and gather qualitative insights.</li>
+    </ol>
+
+    <h2>Prototype 1: Coaster</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Task ID</th>
+                <th>Success Rate</th>
+                <th>Errors/Confusion</th>
+                <th>Observer Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>1</strong></td>
+                <td>50% (1/2)</td>
+                <td>Without instruction, one of the user was guessing the color was related to temperature or battery</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>2</strong></td>
+                <td>100% (2/2)</td>
+                <td></td>
+                <td>Reported reminder was "subtle"</td>
+            </tr>
+            <tr>
+                <td><strong>3</strong></td>
+                <td>50% (1/2)</td>
+                <td></td>
+                <td>With all the external light, it was very hard to perceive.</td>
+            </tr>
+            <tr>
+                <td><strong>4</strong></td>
+                <td>100% (2/2)</td>
+                <td></td>
+                <td>Drank at "yellow" and "red" state</td>
+            </tr>
+            <tr>
+                <td><strong>5</strong></td>
+                <td>100% (2/2)</td>
+                <td></td>
+                <td>The fit seems universal for different drink containers</td>
+            </tr>
+            <tr>
+                <td><strong>6</strong></td>
+                <td>100% (2/2)</td>
+                <td></td>
+                <td>Found it "helpful"</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Prototype 2: Sleeves</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Task ID</th>
+                <th>Success Rate</th>
+                <th>Errors/Confusion</th>
+                <th>Observer Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>1</strong></td>
+                <td>100% (2/2)</td>
+                <td></td>
+                <td>Users understood the mechanics from the first test, fast to learn</td>
+            </tr>
+            <tr>
+                <td><strong>2</strong></td>
+                <td>100% (2/2)</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>3</strong></td>
+                <td>0% (0/2)</td>
+                <td></td>
+                <td>The light is even dimmer than the coaster because it gets diffused in the sleeves material</td>
+            </tr>
+            <tr>
+                <td><strong>4</strong></td>
+                <td>50% (1/2)</td>
+                <td></td>
+                <td>One didn't drink at all</td>
+            </tr>
+            <tr>
+                <td><strong>5</strong></td>
+                <td>50% (1/2)</td>
+                <td></td>
+                <td>Didn't work with mug, but worked with straw</td>
+            </tr>
+            <tr>
+                <td><strong>6</strong></td>
+                <td>50% (1/2)</td>
+                <td></td>
+                <td>Would like a sleeve that allows for different types of container</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Results Analysis</h2>
+    <p><strong>Strengths:</strong></p>
+    <ul>
+        <li>The premise of an ambient, colour-based reminder was successful. The sleeve provided a calm and non-dirsruptive remind that fit into their workflow, as proved by the high success rates in Tasks #2 and #6.</li>
+        <li>The colour semantics, once mapped to time elapsed since last drink, was quickly understood by most users even without instructions, demonstrating strong initial ease of use for the visual language.</li>
+        <li>The users were satisfied and cold see the value, meeting our user satisfaction goal. This confirms a genuine desire for a solution of this sort.</li>
+    </ul>
+
+    <p><strong>Weaknesses:</strong></p>
+    <ul>
+        <li>Only for the sleeves: The sleeves lacked universal compatibility. The one-size-fits all is a flaw. The failure in task 5 showed that our prototype did not meet the practical needs of users with diverse containers.</li>
+        <li>The Sleeve was not consistently effective at prompting hydration for all users (50% success in Task 4). This suggests that the effectiveness of the ambient reminder may vary between individuals, a factor that must be accounted for in the final design.</li>
+        <li>In the presence of other strong light sources, it is difficult to perceive the light emitted by the hydration coaster and sleeves.</li>
+    </ul>
+
+    <h2>Path Forward</h2>
+    <ul>
+        <li>If we want to proceed with a sleeve design, the design must be adapted for universal compatibility. We will explore new sleeve prototype using an adjustable band or a elastic, fabric to fit a broader range of containers.</li>
+        <li>The coaster seems like a more attractive option as it solves the main failure point of the sleeve so it prevents extra resource cost from going over the design itself again. Its flat, small and uniform body also allows it to be highly portable. And performance wise is very similar to the sleeve, so there are no notable drawbacks.</li>
+        <li>To make it more visible when there are other strong light sources, we can potentially allow the user to increase/decrease the intensity of the light emitted by our tool, or add effect such as flickering.</li>
+    </ul>
+</div>
+
+</body>
+</html>

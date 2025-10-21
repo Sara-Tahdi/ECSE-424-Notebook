@@ -1,0 +1,5 @@
+AuthUserFile /home/stahdi/.htpasswd
+AuthGroupFile /dev/null
+AuthName "HCI Project access restricted"
+AuthType Basic
+require valid-user

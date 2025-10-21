@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydration Reminder Bottle - Observations and Proposal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            color: #0066cc;
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 20px 0 30px 0;
+            color: #000;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 30px 0 15px 0;
+            color: #000;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin: 20px 0 10px 0;
+            color: #000;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin: 15px 0 15px 40px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        .figure {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .figure img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+
+        .figure-caption {
+            font-style: italic;
+            margin-top: 8px;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">← Back to Home</a>
+
+    <h1>Project Pitch</h1>
+
+    <h2>Hydration Reminder Bottle</h2>
+    <p>As someone who doesn't frequently feel thirsty, or have the urge to drink water, I often find myself drinking less than a cup of water per day. Hydration mainly comes from alimentation rather than the act of actively drinking. I do feel dehydration though although it is felt through drier skin or fatigue, which are subtle signs and don’t push me to drink water in the moment.</p>
+    <p>This is a problem that I also notice when working with friends who are doing some focus heavy works. Although they often have a bottle nearby, it is not uncommon for the drink to be untouched for a very long period of time. Their hydration patterns seems to be dictated by focus/coding breaks rather than actual bodily needs.</p>
+    <p>So I think students/office workers or people that need to do focus work for long period of time would be a good user group. Many struggle with staying hydrated because they become deeply focused on their work, often even ignoring phone reminders or timers! (as I do)</p>
+    <p>So I propose a hydration reminder in the form of an opaque bottle/mug that subtly changes color over time if it hasn’t been used. The mug will shift its hue in a gradually and when the user drinks from the mug, the color resets naturally</p>
+    <p>There is no subtle, physical cue that exists in the user's peripheral vision to remind them to hydrate. Unlike digital notifications that require active attention and can interrupt workflow, a physical reminder could provide continuous, non-intrusive feedback.</p>
+    <p>I think prototype can be created with modest effort by embedding a simple liquid-level sensor and LED strip within a mug sleeve (so the bottle itself is untouched). The LED color can be programmed to shift on a timer when no drinking motion is detected. This requires only basic sensors and microcontroller programming.</p>
+    <p>Stack wise:</p>
+    <ul>
+        <li><strong>Hardware:</strong> familiarity with microcontrollers (Arduino or Raspberry Pi), simple sensors, and LED integration.</li>
+        <li><strong>Software:</strong> basic programming for timer logic and state changes.</li>
+        <li><strong>Other skills:</strong> Unlike phone notifications that can be ignored, this physical reminder stays in the user's peripheral vision throughout their work session.</li>
+        <li><strong>Non-intrusive design:</strong> design insight to ensure the product remains aesthetically calm and not visually cluttered.</li>
+    </ul>
+
+</body>
+</html>
